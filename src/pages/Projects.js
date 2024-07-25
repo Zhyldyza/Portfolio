@@ -9,7 +9,7 @@ const Projects = () => {
             <ul className="projects">
 
                 {projects.map((project)=>{
-                    return <Project title={project.title} img={project.img} />
+                    return <Project key={project.title} title={project.title} img={project.img} />
                 })}
             
 
